@@ -15,7 +15,7 @@ class ListNode {
   }
 
   append(pair: KeyValuePair) {
-    let p;
+    let p: ListNode | null;
     for (p = this; p.next !== null; p = p.next) {
       // iterate to get last pointer
     }
@@ -23,7 +23,7 @@ class ListNode {
   }
 
   search(key: Key): Value {
-    let p;
+    let p: ListNode | null;
     for (p = this; p !== null; p = p.next) {
       if (p.pair.key === key) return p.pair.value;
     }
